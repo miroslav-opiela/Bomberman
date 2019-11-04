@@ -17,7 +17,7 @@ public class Bomba extends ObjektHry {
 		super(stlpec, riadok, pamat);
 		this.setHrac(hrac);
 		this.dlzkaPlamena = hrac.getDlzkaPlamena();
-		setShape(new ImageTurtleShape("src/main/resources/bomba.png"));
+		setShape(new ImageTurtleShape(this.getClass().getResource("/bomba.png")));
 		pamat.getPlocha().add(this);
 		startovaciCas = (int) (pamat.getPlocha().getPerioda() % 4);
 	}
