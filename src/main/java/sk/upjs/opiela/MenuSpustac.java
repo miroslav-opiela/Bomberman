@@ -38,6 +38,7 @@ public class MenuSpustac extends JFrame {
 
 		plocha = new HraciaPlocha();
 		JPAZPanel volnaPlocha = new JPAZPanel(plocha);
+		volnaPlocha.setFocusable(false);
 		add(volnaPlocha);
 		plocha.setWidth(800);
 		plocha.setHeight(600);
